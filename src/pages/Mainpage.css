@@ -4,19 +4,21 @@
   }
   .header,
   .content {
-    width: 100%;
+    width: 100vw;
   }
 }
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 /* styles.css */
 .container {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   font-family: Pretendard;
   text-align: center;
-  background-image: url("../images/background_iPad.png");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .header {

@@ -13,7 +13,7 @@ function Check() {
     e.preventDefault();
 
     try {
-      const response = await axios.get("https://onesons.site/match", {
+      const response = await axios.get("/match", {
         params: {
           passwd: formData.passwd,
         },
@@ -33,7 +33,7 @@ function Check() {
         generatedMbti
       );
       if (generatedSuccess === true) {
-        navigate("/Cresult", {
+        navigate("/Checkresult", {
           state: {
             generatedPhone,
             generatedDepart,
@@ -76,7 +76,7 @@ function Check() {
               fontWeight: "bold",
               paddingTop: "4px",
             }}
-            onClick={() => navigate("/Error")}
+            onClick={() => navigate("/")}
           >
             처음으로
           </button>

@@ -34,7 +34,7 @@ function Complete() {
             fontWeight: "bold",
             paddingTop: "4px",
           }}
-          onClick={() => navigate("/Error")}
+          onClick={() => navigate("/check")}
         >
           조회하기
         </button>

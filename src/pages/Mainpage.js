@@ -30,7 +30,7 @@ function MainPage() {
   useEffect(() => {
     const fetchParticipants = async () => {
       try {
-        const response = await axios.get("https://onesons.site/participations");
+        const response = await axios.get("/participations");
         setNumParticipants(response.data);
       } catch (error) {
         console.error("Error fetching participants:", error);
@@ -62,7 +62,7 @@ function MainPage() {
             fontWeight: "bold",
             paddingTop: "4px",
           }}
-          onClick={() => navigate("/Error")}
+          onClick={() => navigate("/check")}
         >
           조회하기
         </button>

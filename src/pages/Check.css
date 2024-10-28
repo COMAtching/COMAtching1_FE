@@ -14,7 +14,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.container {
+/* .container {
   height: 100vh;
   width: 100vw;
   font-family: Pretendard;
@@ -22,7 +22,7 @@
   background-image: url("../images/background_iPad.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .content {
   background: #ffffff;

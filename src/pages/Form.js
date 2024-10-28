@@ -211,9 +211,7 @@ function Form() {
   };
 
   const checkIfExists = async () => {
-    const response = await axios.get(
-      `https://onesons.site/register?phone=${formData.phone}`
-    );
+    const response = await axios.get(`/register?phone=${formData.phone}`);
     return response;
   };
 
@@ -275,10 +273,7 @@ function Form() {
     };
 
     try {
-      const response = await axios.post(
-        "https://onesons.site/register",
-        formDataWithIntYear
-      );
+      const response = await axios.post("/register", formDataWithIntYear);
       const generatedPassword = response.data.result.passwd;
       const generatedSuccess = response.data.isSuccess;
       const generatedMessage = response.data.message;
@@ -319,7 +314,7 @@ function Form() {
               fontWeight: "bold",
               paddingTop: "4px",
             }}
-            onClick={() => navigate("/Error")}
+            onClick={() => navigate("/check")}
           >
             조회하기
           </button>

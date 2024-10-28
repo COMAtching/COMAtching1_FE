@@ -47,7 +47,7 @@ function Admin() {
     }
 
     try {
-      const response = await axios.get("https://onesons.site/match", {
+      const response = await axios.get("/match", {
         params: {
           mbti: formData.mbti,
           passwd: formData.passwd,
@@ -112,7 +112,7 @@ function Admin() {
               fontWeight: "bold",
               paddingTop: "4px",
             }}
-            onClick={() => navigate("/Error")}
+            onClick={() => navigate("/check")}
           >
             조회하기
           </button>

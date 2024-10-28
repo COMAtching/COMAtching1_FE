@@ -15,7 +15,7 @@
   font-style: normal;
 }
 /* styles.css */
-.container {
+/* .container {
   height: 100vh;
   width: 100vw;
   font-family: Pretendard;
@@ -23,7 +23,7 @@
   background-image: url("../images/background_iPad.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .header {
   display: flex;
